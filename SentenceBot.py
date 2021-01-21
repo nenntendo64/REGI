@@ -91,10 +91,10 @@ async def on_message(message):
 async def sendMessageToChannel():
     #mylcd.lcd_clear()
     #mylcd.lcd_display_string('Speaking', 1)
-    # Put the chat ID for the channel that you want the bot to send messages,
-    # You can get this by enabling developer mode in discord and right clicking
+    # Put the chat ID for the channel that you want the bot to send messages inside the get_channel
+    # function. You can get this by enabling developer mode in discord and right clicking
     # on the channel.
-    channel = client.get_channel(798392001698857000)
+    channel = client.get_channel()
     message_tosend = ""
     for i in range(5):
         message_tosend+=text_model.make_sentence()
