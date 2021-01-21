@@ -30,7 +30,7 @@ async def on_ready():
     global text_model
     global mylcd
     generateModel.start()
-   # sendMessageToChannel.start()
+    sendMessageToChannel.start()
 
 @client.event
 async def on_message(message):
